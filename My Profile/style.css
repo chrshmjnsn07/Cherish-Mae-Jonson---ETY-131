@@ -685,3 +685,92 @@ social-icon {
     color: #ffff;
     letter-spacing: 1px;
 }
+
+@media (max-width: 768px) {
+  
+  /* 1. Navbar Adjustments */
+  nav {
+    position: relative; /* Ibaba mula sa absolute para hindi takpan ang video/hero */
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+  }
+
+  /* 2. Hero and Content Layout */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .content h1 {
+    font-size: 3.5rem !important; /* Paliitin ang 100px na text para kasya sa screen ng phone */
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .content a {
+    font-size: 18px;
+    padding: 0.7rem 2rem;
+  }
+
+  .tagline {
+    font-size: 20px;
+  }
+
+  /* 3. About Section Adjustments */
+  #about-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 25px;
+  }
+
+  .about-right {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-right h1 {
+    font-size: 32px;
+  }
+
+  .about-right p {
+    font-size: 16px;
+  }
+
+  /* 4. Skills and Activities Layout */
+  .skills-section h1 {
+    font-size: 32px;
+  }
+
+  .activities h1 {
+    font-size: 32px;
+  }
+
+  .activities-col {
+    flex-basis: 90% !important; /* Sakupin ang halos buong lapad ng phone screen */
+    margin-bottom: 20px;
+  }
+
+  /* 5. Video Container / Gallery */
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .container .video-container .video img {
+    width: 100% !important; /* Maging flexible ang lapad ng mga preview box */
+    max-width: 320px;
+    height: auto;
+  }
+
+  .container .popup-video video {
+    width: 95% !important;
+  }
+}

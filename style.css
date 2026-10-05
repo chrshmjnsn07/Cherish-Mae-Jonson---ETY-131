@@ -385,3 +385,70 @@ footer {
   border-top: 2px dashed #C0DDDA;
   margin-top: 0px !important;
 }
+
+@media (max-width: 768px) {
+  
+  /* 1. Navbar/Menu Adjustments */
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar .nav-links {
+    gap: 15px;
+  }
+
+  /* 2. Hero Section Adjustments */
+  .hero-section {
+    padding: 50px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem; 
+  }
+
+  .hero-content .skills-tag {
+    font-size: 0.95rem;
+  }
+
+  /* 3. About Section Adjustments */
+  #about-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-left img {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+
+  .about-right h1 {
+    font-size: 28px;
+  }
+
+  .about-right p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* 4. Social Buttons Wrapper */
+  .img {
+    float: none;
+    margin-top: 20px;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .wrapper .button {
+    margin-top: 0;
+  }
+}
